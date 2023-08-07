@@ -6,12 +6,9 @@
 -> commit f7204ea from 7 August doesn't give any deshydration errors on nextjs so its ok (useMounted)
 
 
-abi can be put on src/components/contracts.ts and then function writing are like the one in WriteContract.tsx (can add args:[] in line 11 for arguments of function, see wagmi.sh docs)
-
-
-need to put a general components that render a general html css for all routes/pages and put the wallet in it
-
+Abi can be put on src/components/contracts.ts and then function writing are like the one in WriteContract.tsx (can add args:[] in line 11 for arguments of function, see wagmi.sh docs)
+Need to put a general components that render a general html css for all routes/pages and put the wallet in it
 I think it should be available already on routing(like on /about) just need to see the button
 
-
+For others chains it can be added/modified in src/pages/_app.tsx: add the chains in like 4 like ''import { scrollTestnet, base } from 'wagmi/chains' and then line 11: ''const chains = [scrollTestnet, base]''
 
