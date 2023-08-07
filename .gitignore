@@ -3,3 +3,6 @@ src/generated.ts
 node_modules
 /node_modules
 node_modules/
+.next/
+.next
+/.next
